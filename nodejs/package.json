@@ -1,0 +1,22 @@
+{
+  "name": "golden-developer-platform-sdk",
+  "version": "1.0.0",
+  "description": "golden developer platform sdk",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "example": "cd examples && node index.js"
+  },
+  "keywords": [
+    "golden",
+    "developer-platform",
+    "platform",
+    "sdk"
+  ],
+  "author": "lf",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "*",
+    "urlencode": "^1.1.0"
+  }
+}
