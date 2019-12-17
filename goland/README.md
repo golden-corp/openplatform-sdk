@@ -5,12 +5,12 @@
 
 1. 通过go module
 ```shell
-    go mod edit --require git.feehi.com/lf/developer-platform-sdk
+    go mod edit --require github.com/golden-corp/openplatform-sdk
 ```
 
 2. 使用go get
 ```shell
-   go get git.feehi.com/lf/developer-platform-sdk
+   go get github.com/golden-corp/openplatform-sdk
 ```
 
 - 快速开具蓝票
