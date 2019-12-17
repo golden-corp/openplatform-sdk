@@ -9,7 +9,7 @@ function Sdk(appkey, appsecret, env="test", ver="1.0.0"){
     this.env = env;
     this.ver = ver;
     this.baseUrl = {
-        "test" : "https://openapi.yewifi.com",
+        "test" : "http://212.129.148.91:14036",
         "prod" : "https://openapi.wetax.com.cn"
     }
 
@@ -30,7 +30,7 @@ function Sdk(appkey, appsecret, env="test", ver="1.0.0"){
             let type = typeof post[arr[key]]
             if( type === "array" || type === "object" ){
                 let tempStr = JSON.stringify( post[arr[key]] )
-                tempStr = tempStr.replace(/\//g, "\\/")
+                // tempStr = tempStr.replace(/\//g, "\\/")
                 str += arr[key] + "=" + tempStr + "&"
             }else{
                 str += arr[key] + "=" + post[arr[key]] + "&"
