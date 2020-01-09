@@ -10,6 +10,7 @@ use Gd\Sdk;
 require __DIR__ . "/../autoload.php";
 
 $obj = new Sdk("testappkey111", "请更正为自己的appsecret", "test", "1.0.0");
+$obj->setBaseUrl("https://openapi.yewifi.com");//设置服务器地址
 
 $str = <<<str
 {
@@ -68,6 +69,7 @@ use Gd\Sdk;
 require "/path/to/golden/autoload.php";
 
 $obj = new Sdk("testappkey111", "请更正为自己的appsecret", "test", "1.0.0");
+$obj->setBaseUrl("https://openapi.yewifi.com");//设置服务器地址
 ```
 
 运行example

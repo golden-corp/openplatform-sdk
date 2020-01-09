@@ -127,6 +127,13 @@ class Sdk
         $this->baseUrl = $baseUrl;
     }
 
+	private function getRequestUrl(){
+	    if(is_string($this->baseUrl)){
+	        return $this->baseUrl;
+        }
+        return $this->baseUrl[$this->getEnv()];
+    }
+	
     /**
      * @param $timestamp
      * @param array $data
@@ -168,7 +175,7 @@ class Sdk
     public function httpRequest($url, array $data)
     {
 
-        $baseUri = $this->baseUrl[$this->getEnv()];
+        $baseUri = self::getRequestUrl();
         $timestamp = time();
         $sign = $this->sign($timestamp, $data);
         $url .= "?ver=" .$this->ver . "&signature=" . $sign . "&appkey=" . $this->getAppkey() . "&timestamp=" . $timestamp;
