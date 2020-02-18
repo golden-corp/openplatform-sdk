@@ -1,0 +1,12 @@
+[submodule "java"]
+	path = java
+	url = https://github.com/golden-corp/openplatform-sdk-java.git
+[submodule "php"]
+	path = php
+	url = https://github.com/golden-corp/openplatform-sdk-php.git
+[submodule "nodejs"]
+	path = nodejs
+	url = https://github.com/golden-corp/openplatform-sdk-nodejs.git
+[submodule "goland"]
+	path = goland
+	url = https://github.com/golden-corp/openplatform-sdk-go.git
